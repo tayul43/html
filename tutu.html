@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb On/Off</title>
+    <script type="text/javascript">
+        function light(show) {
+            var pic;
+            if (show == 0) {
+                pic = "https://www.w3schools.com/js/pic_bulboff.gif";
+            } else {
+                pic = "https://www.w3schools.com/js/pic_bulbon.gif";
+            }
+            document.getElementById('bulb').src = pic;
+        }
+    </script>
+</head>
+<body>
+    <h1>Bulb On/Off</h1>
+    <p>Here, a JavaScript function changes the source attribute of an image.</p>
+    <center>
+        <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="120px" height="200px">
+        <p>
+            <button type="button" onclick="light(1)">Light ON</button>
+            <button type="button" onclick="light(0)">Light OFF</button>
+        </p>
+    </center>
+</body>
+</html>
